@@ -225,7 +225,7 @@ class XMAS {
         
 
         e.target.innerHTML = s.next;
-        e.left.innerHTML = `<div class="leftText animate__animated animate__bounceInUp">${s.text}</div>`
+        e.left.innerHTML = `<div class="leftText">${s.text}</div>`
         this.i = (this.i + 1) % this.seq.length;
 
         if(s.jump){
