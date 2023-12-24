@@ -183,7 +183,9 @@ class XMAS {
 
         let nextBtn = document.querySelector("#next");
         let leftBtn = document.querySelector("#left");
-        const nextFn =()=> this.next({target:nextBtn, left:leftBtn})
+        let buttons = document.querySelector(".buttons");
+        
+        const nextFn =()=> this.next({target:nextBtn, left:leftBtn, btn:buttons})
         this.seq = this.seq;
         nextBtn.addEventListener("click", nextFn);
 
@@ -221,15 +223,21 @@ class XMAS {
                 break;
             default:
                 break;
-        }
-        
+        };
 
-        e.target.innerHTML = s.next;
-        e.left.innerHTML = `<div class="leftText">${s.text}</div>`
-        this.i = (this.i + 1) % this.seq.length;
 
-        if(s.jump){
-            this.next(e);
-        }
+        e.btn.style.opacity = 0;
+        setTimeout(()=>{
+            e.btn.style.opacity = 1;
+            e.target.innerHTML = s.next;
+            e.left.innerHTML = `<div class="leftText">${s.text}</div>`
+            this.i = (this.i + 1) % this.seq.length;
+    
+            if(s.jump){
+                this.next(e);
+            }
+        },2000)
+
+      
     }
 }
