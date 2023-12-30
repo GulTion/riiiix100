@@ -8,6 +8,7 @@ body {
 
 canvas {
     cursor: crosshair;
+    position: fixed;
     display: block;
 }
 
