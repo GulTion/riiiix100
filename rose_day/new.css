@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#background{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0px;
+
+}
+.postcard {
+/* height: 100vh; */
+  /* background: rgba(255, 255, 255, 0.101); */
+  color: rgb(255, 224, 224);
+  margin: 0 auto;
+  border-radius: 2%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  /* font-size: 1px; */
+  /* box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3); */
+
+  /* -webkit-transform: rotate(2.5deg); 
+  transform: rotate(2.5deg);
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; */
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #fdfdfd;
+  margin-bottom: 5px;
+}
+
+
+
+p span {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+  color: #ffffff;
+}
+p {
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 600;
+}
+.ullu {
+  font-size: 25px;
+
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
